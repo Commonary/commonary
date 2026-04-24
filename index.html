@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Dale Francis I. Demeterio | Portfolio</title>
+	<meta charset="utf-8" />
+	<meta content="width=device-width" name="viewport" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet" type="text/css" />
+	<style>
+		.portfolio-row,
+		.portfolio-row-content {
+			position: relative
+		}
+
+		.portfolio-html-block {
+			text-align: center
+		}
+
+		body {
+			background-color: #1a1a1a;
+			color: #000000;
+			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif
+		}
+
+		a {
+			color: #7747FF
+		}
+
+		* {
+			box-sizing: border-box
+		}
+
+		body,
+		h1,
+		h2,
+		p {
+			margin: 0
+		}
+
+		.portfolio-row-content {
+			max-width: 1440px;
+			margin: 0 auto;
+			display: flex
+		}
+
+		.portfolio-row-content .portfolio-col-w3 {
+			flex-basis: 25%
+		}
+
+		.portfolio-row-content .portfolio-col-w5 {
+			flex-basis: 41.6666666667%
+		}
+
+		.portfolio-row-content .portfolio-col-w7 {
+			flex-basis: 58.3333333333%
+		}
+
+		.portfolio-row-content .portfolio-col-w9 {
+			flex-basis: 75%
+		}
+
+		.portfolio-row-content .portfolio-col-w12 {
+			flex-basis: 100%
+		}
+
+		.portfolio-divider,
+		.portfolio-image {
+			overflow: auto
+		}
+
+		.portfolio-divider .center,
+		.portfolio-image .portfolio-center {
+			margin: 0 auto
+		}
+
+		.portfolio-row-2 .portfolio-col-1 .portfolio-block-1 {
+			width: 100%
+		}
+
+		.portfolio-image img {
+			display: block;
+			width: 100%
+		}
+
+		@media (max-width:768px) {
+			.portfolio-row-content:not(.no_stack) {
+				display: block
+			}
+		}
+
+		.portfolio-row-1,
+		.portfolio-row-2,
+		.portfolio-row-3,
+		.portfolio-row-4,
+		.portfolio-row-5,
+		.portfolio-row-6 {
+			background-repeat: no-repeat
+		}
+
+		.portfolio-row-1 .portfolio-row-content,
+		.portfolio-row-2 .portfolio-row-content,
+		.portfolio-row-4 .portfolio-row-content,
+		.portfolio-row-5 .portfolio-row-content,
+		.portfolio-row-6 .portfolio-row-content {
+			background-color: #2d2d2d;
+			background-repeat: no-repeat;
+			border-radius: 0;
+			color: #000000
+		}
+
+		.portfolio-row-1 .portfolio-col-1,
+		.portfolio-row-1 .portfolio-col-2,
+		.portfolio-row-2 .portfolio-col-1,
+		.portfolio-row-2 .portfolio-col-2,
+		.portfolio-row-3 .portfolio-col-1,
+		.portfolio-row-4 .portfolio-col-1,
+		.portfolio-row-4 .portfolio-col-2,
+		.portfolio-row-5 .portfolio-col-1,
+		.portfolio-row-6 .portfolio-col-1,
+		.portfolio-row-6 .portfolio-col-2,
+		.portfolio-row-7 .portfolio-col-1 {
+			padding-bottom: 5px;
+			padding-top: 5px
+		}
+
+		.portfolio-row-1 .portfolio-col-1 .portfolio-block-1,
+		.portfolio-row-1 .portfolio-col-2 .portfolio-block-1,
+		.portfolio-row-4 .portfolio-col-1 .portfolio-block-1,
+		.portfolio-row-4 .portfolio-col-2 .portfolio-block-1,
+		.portfolio-row-4 .portfolio-col-2 .portfolio-block-5,
+		.portfolio-row-6 .portfolio-col-1 .portfolio-block-1,
+		.portfolio-row-6 .portfolio-col-2 .portfolio-block-1 {
+			padding: 10px;
+			text-align: center;
+			width: 100%
+		}
+
+		.portfolio-row-1 .portfolio-col-1 .portfolio-block-2,
+		.portfolio-row-1 .portfolio-col-2 .portfolio-block-2,
+		.portfolio-row-3 .portfolio-col-1 .portfolio-block-1,
+		.portfolio-row-3 .portfolio-col-1 .portfolio-block-3,
+		.portfolio-row-4 .portfolio-col-1 .portfolio-block-2,
+		.portfolio-row-4 .portfolio-col-2 .portfolio-block-2,
+		.portfolio-row-4 .portfolio-col-2 .portfolio-block-4,
+		.portfolio-row-5 .portfolio-col-1 .portfolio-block-1,
+		.portfolio-row-6 .portfolio-col-1 .portfolio-block-2,
+		.portfolio-row-6 .portfolio-col-1 .portfolio-block-4,
+		.portfolio-row-6 .portfolio-col-2 .portfolio-block-2 {
+			padding: 10px
+		}
+
+		.portfolio-row-3 .portfolio-row-content,
+		.portfolio-row-7 .portfolio-row-content {
+			background-color: #2d2d2d;
+			background-repeat: no-repeat;
+			color: #000000
+		}
+
+		.portfolio-row-7 {
+			background-color: #ffffff;
+			background-repeat: no-repeat
+		}
+
+		.portfolio-row-1 .portfolio-col-1 .portfolio-block-1 h1,
+		.portfolio-row-4 .portfolio-col-1 .portfolio-block-1 h1,
+		.portfolio-row-4 .portfolio-col-2 .portfolio-block-1 h1,
+		.portfolio-row-4 .portfolio-col-2 .portfolio-block-5 h1,
+		.portfolio-row-6 .portfolio-col-1 .portfolio-block-1 h1,
+		.portfolio-row-6 .portfolio-col-2 .portfolio-block-1 h1 {
+			color: #dddddd;
+			direction: ltr;
+			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+			font-size: 38px;
+			font-weight: 700;
+			letter-spacing: normal;
+			line-height: 120%;
+			text-align: left
+		}
+
+		.portfolio-row-1 .portfolio-col-2 .portfolio-block-1 h1 {
+			color: #dddddd;
+			direction: ltr;
+			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+			font-size: 38px;
+			font-weight: 700;
+			letter-spacing: normal;
+			line-height: 120%;
+			text-align: right
+		}
+	</style>
+</head>
+
+<body>
+	<div class="portfolio-page-container">
+		<div class="portfolio-row portfolio-row-1">
+			<div class="portfolio-row-content">
+				<div class="portfolio-col portfolio-col-1 portfolio-col-w3">
+					<div class="portfolio-block portfolio-block-1 portfolio-heading">
+						<h1><span>PORTFOLIO</span> </h1>
+					</div>
+					<div class="portfolio-block portfolio-block-2 portfolio-divider">
+						<div class="center portfolio-separator" style="border-top:4px solid #dddddd;width:100%;"></div>
+					</div>
+				</div>
+				<div class="portfolio-col portfolio-col-2 portfolio-col-w9">
+					<div class="portfolio-block portfolio-block-1 portfolio-heading">
+						<h1><span>DALE FRANCIS I. DEMETERIO</span> </h1>
+					</div>
+					<div class="portfolio-block portfolio-block-2 portfolio-divider">
+						<div class="center portfolio-separator" style="border-top:4px solid #dddddd;width:100%;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-row portfolio-row-2">
+			<div class="portfolio-row-content">
+				<div class="portfolio-col portfolio-col-1 portfolio-col-w3">
+					<div class="portfolio-block portfolio-block-1 portfolio-image"><img alt="" class="portfolio-center portfolio-fixedwidth" src="https://f31e5243a3.imgdist.com/pub/bfra/t340d41x/4vr/rdo/7sr/PHOTO%201.png" style="max-width:306px;border-radius:32px;" title="" /></div>
+				</div>
+				<div class="portfolio-col portfolio-col-2 portfolio-col-w9">
+					<div class="portfolio-block portfolio-block-1 portfolio-html-block">
+						<div style="
+    background-color: #2f2f2f; 
+    color: #e0e0e0; 
+    padding: 35px; 
+    border-radius: 20px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    line-height: 1.8;
+    max-width: 750px;
+    margin: 20px auto;
+    border: 1px solid #444444;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+">
+							<h2 style="margin-top: 0; color: #ffffff; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1px; text-align: center;">
+								Professional Summary
+							</h2>
+							<p style="margin-bottom: 0; font-size: 1.1rem; text-align: justify; text-justify: inter-word;">
+								Dedicated <b>Technical Specialist</b> and Consultant with over <b>4 years</b> of comprehensive experience in advanced computer hardware diagnostics, infrastructure maintenance, and high-end digital media production. As the founder of <b>CoreFrame Solutions</b>, I have built a reputation for delivering precision-driven technical repairs alongside creative video post-production services. I bridge the gap between complex technical troubleshooting and client-focused results, ensuring seamless system performance and impactful visual storytelling for every project.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-row portfolio-row-3">
+			<div class="portfolio-row-content">
+				<div class="portfolio-col portfolio-col-1 portfolio-col-w12">
+					<div class="portfolio-block portfolio-block-1 portfolio-divider">
+						<div class="center portfolio-separator" style="border-top:4px solid #dddddd;width:100%;"></div>
+					</div>
+					<div class="portfolio-block portfolio-block-2 portfolio-html-block">
+						<div style="
+    background-color: #2f2f2f; 
+    color: #e0e0e0; 
+    padding: 20px 30px; 
+    border-radius: 15px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    line-height: 1.7;
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    border: 1px solid #444444;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+">
+							<h2 style="margin-top: 0; color: #ffffff; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1px; text-align: center;">
+								About Me
+							</h2>
+							<p style="margin-bottom: 20px; font-size: 1.1rem; text-align: center;">
+								I am <strong>Dale Francis</strong>, a dedicated game developer and entrepreneur. I lead my own production studio with a focus on technical innovation and immersive design. I am highly proficient in <strong>Lua, Python, and C++</strong>, leveraging these languages to build robust, high-performance systems.
+							</p>
+							<p style="margin-bottom: 0; font-size: 1rem; text-align: center; font-style: italic; color: #bbbbbb;">
+								Keep an eye out for my upcoming projects, which will be featured below upon public release.
+							</p>
+						</div>
+					</div>
+					<div class="portfolio-block portfolio-block-3 portfolio-divider">
+						<div class="center portfolio-separator" style="border-top:4px solid #dddddd;width:100%;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-row portfolio-row-4">
+			<div class="portfolio-row-content">
+				<div class="portfolio-col portfolio-col-1 portfolio-col-w5">
+					<div class="portfolio-block portfolio-block-1 portfolio-heading">
+						<h1><span>AWARDS</span> </h1>
+					</div>
+					<div class="portfolio-block portfolio-block-2 portfolio-divider">
+						<div class="center portfolio-separator" style="border-top:4px solid #dddddd;width:100%;"></div>
+					</div>
+					<div class="portfolio-block portfolio-block-3 portfolio-html-block">
+						<div id="portfolio-timeline-embed">
+							<style>
+								#portfolio-timeline-embed {
+									font-family: 'Inter', -apple-system, sans-serif;
+									color: #333;
+									max-width: 650px;
+									margin: 0 auto;
+									padding: 20px;
+									background-color: transparent;
+								}
+
+								.timeline-line {
+									border-left: 3px solid #ccc;
+									padding-left: 30px;
+									margin-left: 10px;
+								}
+
+								.gray-cube {
+									background-color: #ededed;
+									border-radius: 12px;
+									padding: 20px;
+									margin-bottom: 35px;
+									position: relative;
+									box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+								}
+
+								/* Timeline indicator */
+								.gray-cube::before {
+									content: "";
+									position: absolute;
+									left: -41px;
+									top: 22px;
+									width: 14px;
+									height: 14px;
+									background-color: #999;
+									border-radius: 50%;
+									border: 4px solid #fff;
+								}
+
+								.cube-header {
+									font-weight: 700;
+									font-size: 1.15rem;
+									margin-bottom: 5px;
+									display: block;
+								}
+
+								.sub-header {
+									font-size: 0.85rem;
+									color: #777;
+									margin-bottom: 15px;
+									display: block;
+								}
+
+								.item-list {
+									display: flex;
+									flex-direction: column;
+									gap: 15px;
+								}
+
+								.award-container {
+									border-bottom: 1px solid #ddd;
+									padding-bottom: 10px;
+								}
+
+								.award-container:last-child {
+									border-bottom: none;
+								}
+
+								.cert-img {
+									display: block;
+									width: 100%;
+									max-width: 300px;
+									height: auto;
+									border-radius: 6px;
+									margin-top: 10px;
+									border: 1px solid #ccc;
+								}
+
+								.comment {
+									font-family: monospace;
+									font-size: 0.75rem;
+									color: #999;
+									display: block;
+									margin-top: 4px;
+								}
+							</style>
+							<div class="timeline-line">
+								<div class="gray-cube">
+									<span class="cube-header">Non-academic</span>
+									<div class="item-list">
+										<div class="award-container">
+											Kodland Top 2, Basics in Programming Graduate
+											<span class="comment">// Not added yet</span>
+										</div>
+									</div>
+								</div>
+								<div class="gray-cube">
+									<span class="cube-header">Liceo De Masbate Colleges Incorporated</span>
+									<span class="sub-header">(G2 - G10)</span>
+									<div class="item-list">
+										<div class="award-container">
+											Honors (G8, Q2 and Q4)
+											<span class="comment">// No image yet</span>
+										</div>
+										<div class="award-container">
+											Honors (G9, Q3 and Q4)
+											<span class="comment">// No image yet</span>
+										</div>
+										<div class="award-container">
+											Honors (G10, Q2)
+											<span class="comment">// No image yet</span>
+										</div>
+										<div class="award-container">
+											Honors (G10, Q4)
+											<img alt="G10 Q4 Honors" class="cert-img" src="certificate1.png" />
+											<span class="comment">// Image there</span>
+										</div>
+										<div class="award-container">
+											Loyalty Award (G10)
+											<img alt="Loyalty Award" class="cert-img" src="certificate2.png" />
+											<span class="comment">// Image there</span>
+										</div>
+										<div class="award-container">
+											Lighting Director Award (G10)
+											<img alt="Lighting Director" class="cert-img" src="certificate3.png" />
+											<span class="comment">// Image there</span>
+										</div>
+										<div class="award-container">
+											Junior Highschool Diploma (G10)
+											<img alt="JHS Diploma" class="cert-img" src="certificate4.png" />
+											<span class="comment">// Image there</span>
+										</div>
+									</div>
+								</div>
+								<div class="gray-cube">
+									<span class="cube-header">University of The Cordilleras</span>
+									<div class="item-list">
+										<div class="award-container">
+											Tech award thingy (Name TBD)
+											<span class="comment">// No image yet</span>
+										</div>
+										<div class="award-container">
+											Honors (G11, trimester 1)
+											<img alt="G11 Honors" class="cert-img" src="certificate5.png" />
+											<span class="comment">// Image there</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-col portfolio-col-2 portfolio-col-w7">
+					<div class="portfolio-block portfolio-block-1 portfolio-heading">
+						<h1><span>MY SKILLS</span> </h1>
+					</div>
+					<div class="portfolio-block portfolio-block-2 portfolio-divider">
+						<div class="center portfolio-separator" style="border-top:4px solid #dddddd;width:100%;"></div>
+					</div>
+					<div class="portfolio-block portfolio-block-3 portfolio-html-block">
+						<div id="portfolio-skills-embed">
+							<style>
+								#portfolio-skills-embed {
+									font-family: 'Inter', -apple-system, sans-serif;
+									color: #333;
+									max-width: 900px;
+									margin: 0 auto;
+									padding: 20px;
+									background-color: transparent;
+								}
+
+								.skills-grid {
+									display: grid;
+									grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+									gap: 20px;
+								}
+
+								.skill-cube {
+									background-color: #ededed;
+									border-radius: 12px;
+									padding: 25px;
+									box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+									border: 1px solid #ddd;
+									display: flex;
+									flex-direction: column;
+								}
+
+								.skill-header {
+									font-weight: 800;
+									font-size: 1.2rem;
+									margin-bottom: 15px;
+									color: #222;
+									border-bottom: 2px solid #ccc;
+									padding-bottom: 8px;
+									display: flex;
+									align-items: center;
+								}
+
+								.skill-list {
+									list-style: none;
+									padding: 0;
+									margin: 0;
+								}
+
+								.skill-item {
+									margin-bottom: 10px;
+									font-size: 0.95rem;
+									display: flex;
+									align-items: center;
+									gap: 10px;
+								}
+
+								.skill-icon {
+									width: 20px;
+									height: 20px;
+									object-fit: contain;
+								}
+
+								.category-img {
+									width: 100%;
+									height: 120px;
+									object-fit: cover;
+									border-radius: 8px;
+									margin-bottom: 15px;
+									border: 1px solid #ccc;
+								}
+
+								.tag-container {
+									display: flex;
+									flex-wrap: wrap;
+									gap: 8px;
+									margin-top: 5px;
+								}
+
+								.lang-tag {
+									background: #fff;
+									padding: 6px 12px;
+									border-radius: 8px;
+									/* Slightly squared to match "cube" vibe */
+									font-size: 0.85rem;
+									border: 1px solid #ddd;
+									font-weight: 600;
+									display: flex;
+									align-items: center;
+									gap: 5px;
+								}
+							</style>
+							<div class="skills-grid">
+								<div class="skill-cube">
+									<img alt="Media Production" class="category-img" src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&amp;fit=crop&amp;q=80&amp;w=500" />
+									<span class="skill-header">Digital Media</span>
+									<ul class="skill-list">
+										<li class="skill-item"><img class="skill-icon" src="https://cdn.worldvectorlogo.com/logos/davinci-resolve.svg" /> DaVinci Resolve Studio</li>
+										<li class="skill-item"><img class="skill-icon" src="https://cdn.worldvectorlogo.com/logos/adobe-photoshop-2.svg" /> Adobe Photoshop</li>
+										<li class="skill-item">🎬 Video Editing &amp; Color Grading</li>
+										<li class="skill-item">📸 Cinematography &amp; Photography</li>
+									</ul>
+								</div>
+								<div class="skill-cube">
+									<img alt="IT Support" class="category-img" src="https://images.unsplash.com/photo-1597733336794-12d05021d510?auto=format&amp;fit=crop&amp;q=80&amp;w=500" />
+									<span class="skill-header">IT &amp; Support</span>
+									<ul class="skill-list">
+										<li class="skill-item">🛠️ Hardware Troubleshooting</li>
+										<li class="skill-item">⚙️ System Optimization</li>
+										<li class="skill-item">💻 OS Deployment &amp; Software</li>
+										<li class="skill-item">🔌 PC Assembly &amp; Upgrades</li>
+									</ul>
+								</div>
+								<div class="skill-cube">
+									<img alt="Development" class="category-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&amp;fit=crop&amp;q=80&amp;w=500" />
+									<span class="skill-header">Development</span>
+									<ul class="skill-list">
+										<li class="skill-item"><img class="skill-icon" src="https://cdn.worldvectorlogo.com/logos/html-1.svg" /> HTML5 / CSS3</li>
+										<li class="skill-item">🎮 Basic Game Development</li>
+										<li class="skill-item">🤖 Kodland Programming Basics</li>
+									</ul>
+								</div>
+								<div class="skill-cube">
+									<img alt="Languages" class="category-img" src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&amp;fit=crop&amp;q=80&amp;w=500" />
+									<span class="skill-header">Languages</span>
+									<div class="tag-container">
+										<span class="lang-tag">🇺🇸 English</span>
+										<span class="lang-tag">🇵🇭 Tagalog</span>
+										<span class="lang-tag">📍 Masbateño</span>
+									</div>
+									<p style="font-size: 0.85rem; color: #666; margin-top: 15px; line-height: 1.4;">
+										Native and professional proficiency in multi-lingual environments.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-block portfolio-block-4 portfolio-divider">
+						<div class="center portfolio-separator" style="border-top:4px solid #dddddd;width:100%;"></div>
+					</div>
+					<div class="portfolio-block portfolio-block-5 portfolio-heading">
+						<h1><span>Contact Me</span> </h1>
+					</div>
+					<div class="portfolio-block portfolio-block-6 portfolio-html-block">
+						<div id="portfolio-contact-chunk">
+							<style>
+								@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap');
+
+								#portfolio-contact-chunk {
+									font-family: 'Inter', sans-serif;
+									max-width: 550px;
+									margin: 20px auto;
+									padding: 10px;
+								}
+
+								.contact-cube {
+									background-color: #ededed;
+									border-radius: 16px;
+									padding: 30px;
+									/* Bigger, more prominent border */
+									border: 4px solid #d1d1d1;
+									box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+								}
+
+								.contact-row {
+									display: flex;
+									align-items: center;
+									gap: 12px;
+									margin-bottom: 15px;
+									flex-wrap: wrap;
+								}
+
+								.contact-row:last-child {
+									margin-bottom: 0;
+								}
+
+								/* SVG Icon Styles */
+								.contact-icon {
+									width: 24px;
+									height: 24px;
+									fill: #444;
+									flex-shrink: 0;
+								}
+
+								.contact-text {
+									font-family: 'JetBrains Mono', monospace;
+									font-size: 1rem;
+									color: #222;
+									font-weight: 500;
+									text-decoration: none;
+								}
+
+								/* Active Pill Suffix */
+								.active-suffix {
+									display: inline-flex;
+									align-items: center;
+									gap: 5px;
+									background-color: #dcfce7;
+									color: #166534;
+									font-size: 0.65rem;
+									font-weight: 800;
+									text-transform: uppercase;
+									padding: 3px 8px;
+									border-radius: 12px;
+									border: 1px solid #bbf7d0;
+									margin-left: 5px;
+									height: fit-content;
+								}
+
+								.green-dot {
+									width: 6px;
+									height: 6px;
+									background-color: #22c55e;
+									border-radius: 50%;
+									animation: pulse-dot 2s infinite;
+								}
+
+								@keyframes pulse-dot {
+									0% {
+										box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+									}
+
+									70% {
+										box-shadow: 0 0 0 6px rgba(34, 197, 94, 0);
+									}
+
+									100% {
+										box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+									}
+								}
+							</style>
+							<div class="contact-cube">
+								<div class="contact-row">
+									<svg class="contact-icon" viewbox="0 0 24 24">
+										<path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
+									</svg>
+									<a class="contact-text" href="mailto:dalefrancisdemeterio2008@gmail.com">
+										dalefrancisdemeterio2008@gmail.com
+									</a>
+									<div class="active-suffix">
+										<span class="green-dot"></span> active
+									</div>
+								</div>
+								<div class="contact-row">
+									<svg class="contact-icon" viewbox="0 0 24 24">
+										<path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path>
+									</svg>
+									<span class="contact-text">0945 693 9721</span>
+									<div class="active-suffix">
+										<span class="green-dot"></span> active
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-row portfolio-row-5">
+			<div class="portfolio-row-content">
+				<div class="portfolio-col portfolio-col-1 portfolio-col-w12">
+					<div class="portfolio-block portfolio-block-1 portfolio-divider">
+						<div class="center portfolio-separator" style="border-top:4px solid #dddddd;width:100%;"></div>
+					</div>
+					<div class="portfolio-block portfolio-block-2 portfolio-html-block">
+						<div id="portfolio-projects-embed">
+							<style>
+								#portfolio-projects-embed {
+									font-family: 'Inter', -apple-system, sans-serif;
+									color: #333;
+									max-width: 1100px;
+									/* Wider to fit 4 items comfortably */
+									margin: 40px auto;
+									padding: 20px;
+									background-color: transparent;
+								}
+
+								.section-title {
+									font-weight: 800;
+									font-size: 1.5rem;
+									margin-bottom: 25px;
+									text-align: center;
+									color: #444;
+									text-transform: uppercase;
+									letter-spacing: 1px;
+								}
+
+								.projects-grid {
+									display: grid;
+									/* Creates 4 columns if there is space, otherwise drops to 2 or 1 */
+									grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+									gap: 15px;
+								}
+
+								.project-cube {
+									background-color: #ededed;
+									border-radius: 12px;
+									padding: 0;
+									box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+									border: 1px solid #ddd;
+									overflow: hidden;
+									display: flex;
+									flex-direction: column;
+									position: relative;
+								}
+
+								.project-img-container {
+									position: relative;
+									height: 150px;
+									width: 100%;
+									background-color: #ccc;
+								}
+
+								.project-img {
+									width: 100%;
+									height: 100%;
+									object-fit: cover;
+									filter: blur(3px) grayscale(60%);
+									opacity: 0.6;
+								}
+
+								.service-overlay {
+									position: absolute;
+									top: 0;
+									left: 0;
+									width: 100%;
+									height: 100%;
+									display: flex;
+									align-items: center;
+									justify-content: center;
+									background: rgba(0, 0, 0, 0.5);
+									color: white;
+									font-weight: 700;
+									font-size: 0.75rem;
+									text-align: center;
+									padding: 15px;
+									text-transform: uppercase;
+									letter-spacing: 0.5px;
+								}
+
+								.project-info {
+									padding: 15px;
+									flex-grow: 1;
+									display: flex;
+									flex-direction: column;
+								}
+
+								.project-name {
+									font-weight: 800;
+									font-size: 1rem;
+									margin-bottom: 5px;
+									color: #111;
+									display: block;
+								}
+
+								.role-tag {
+									font-size: 0.75rem;
+									font-weight: 700;
+									color: #d9534f;
+									/* Accent color for the role */
+									text-transform: uppercase;
+									margin-bottom: 8px;
+									display: block;
+								}
+
+								.project-desc {
+									font-size: 0.8rem;
+									color: #555;
+									line-height: 1.4;
+									margin-bottom: 10px;
+								}
+
+								.status-badge {
+									margin-top: auto;
+									font-size: 0.7rem;
+									font-family: monospace;
+									color: #999;
+									border-top: 1px solid #ddd;
+									padding-top: 8px;
+								}
+							</style>
+							<h2 class="section-title">Development &amp; Community Projects</h2>
+							<div class="projects-grid">
+								<div class="project-cube">
+									<div class="project-img-container">
+										<img class="project-img" src="https://images.unsplash.com/photo-1599408162489-0507797d04bb?auto=format&amp;fit=crop&amp;q=80&amp;w=400" />
+										<div class="service-overlay">Temporarily Out of Service</div>
+									</div>
+									<div class="project-info">
+										<span class="project-name">Cherry At Home</span>
+										<span class="role-tag">Role: Developer</span>
+										<p class="project-desc">A Roblox Napoleonic War game focused on historical combat mechanics.</p>
+										<div class="status-badge">// link_broken_v1</div>
+									</div>
+								</div>
+								<div class="project-cube">
+									<div class="project-img-container">
+										<img class="project-img" src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&amp;fit=crop&amp;q=80&amp;w=400" />
+										<div class="service-overlay">Temporarily Out of Service</div>
+									</div>
+									<div class="project-info">
+										<span class="project-name">GvD: Project Destiny</span>
+										<span class="role-tag">Role: Lead Developer</span>
+										<p class="project-desc">An RPG-style Roblox experience based on the Guests vs Dummies universe.</p>
+										<div class="status-badge">// assets_migrating</div>
+									</div>
+								</div>
+								<div class="project-cube">
+									<div class="project-img-container">
+										<img class="project-img" src="https://images.unsplash.com/photo-1605806616949-1e87b487fc2f?auto=format&amp;fit=crop&amp;q=80&amp;w=400" />
+										<div class="service-overlay">Temporarily Out of Service</div>
+									</div>
+									<div class="project-info">
+										<span class="project-name">Escapist</span>
+										<span class="role-tag">Role: Developer</span>
+										<p class="project-desc">A 16-player co-op horror experience set in a high-security facility.</p>
+										<div class="status-badge">// internal_update_04</div>
+									</div>
+								</div>
+								<div class="project-cube">
+									<div class="project-img-container">
+										<img class="project-img" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&amp;fit=crop&amp;q=80&amp;w=400" />
+										<div class="service-overlay">Temporarily Out of Service</div>
+									</div>
+									<div class="project-info">
+										<span class="project-name">Cherry Village</span>
+										<span class="role-tag" style="font-size: 0.65rem;">Brigadier General | High Command</span>
+										<p class="project-desc">Online community and multigame faction leadership and organization.</p>
+										<div class="status-badge">// server_rebooting</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-row portfolio-row-6">
+			<div class="portfolio-row-content">
+				<div class="portfolio-col portfolio-col-1 portfolio-col-w5">
+					<div class="portfolio-block portfolio-block-1 portfolio-heading">
+						<h1><span>TOOLKIT</span> </h1>
+					</div>
+					<div class="portfolio-block portfolio-block-2 portfolio-divider">
+						<div class="center portfolio-separator" style="border-top:4px solid #dddddd;width:100%;"></div>
+					</div>
+					<div class="portfolio-block portfolio-block-3 portfolio-html-block">
+						<div id="portfolio-toolkit-embed">
+							<style>
+								#portfolio-toolkit-embed {
+									font-family: 'Inter', -apple-system, sans-serif;
+									color: #333;
+									max-width: 1000px;
+									/* Bigger container */
+									margin: 40px auto;
+									padding: 20px;
+									background-color: transparent;
+								}
+
+								.toolkit-grid {
+									display: grid;
+									grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+									gap: 20px;
+								}
+
+								.tool-cube {
+									background-color: #ededed;
+									border-radius: 12px;
+									padding: 25px;
+									/* Increased padding */
+									border: 1px solid #ddd;
+									box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+									display: flex;
+									flex-direction: column;
+									min-height: 200px;
+								}
+
+								.tool-category {
+									font-weight: 800;
+									font-size: 1rem;
+									color: #444;
+									text-transform: uppercase;
+									letter-spacing: 1.5px;
+									margin-bottom: 20px;
+									border-bottom: 2px solid #ccc;
+									padding-bottom: 8px;
+								}
+
+								.tool-list {
+									list-style: none;
+									padding: 0;
+									margin: 0;
+									display: flex;
+									flex-direction: column;
+									gap: 12px;
+								}
+
+								.tool-item {
+									font-size: 0.95rem;
+									display: flex;
+									align-items: center;
+									gap: 12px;
+									font-weight: 600;
+								}
+
+								.tool-logo {
+									width: 24px;
+									height: 24px;
+									object-fit: contain;
+								}
+
+								.status-badge {
+									font-size: 0.65rem;
+									padding: 3px 8px;
+									border-radius: 4px;
+									margin-left: auto;
+									text-transform: uppercase;
+									font-weight: 800;
+								}
+
+								.primary {
+									background: #4a90e2;
+									color: white;
+								}
+
+								.obsolete {
+									background: #999;
+									color: white;
+									opacity: 0.6;
+								}
+
+								/* Tech Tags specifically for languages */
+								.tag-grid {
+									display: grid;
+									grid-template-columns: 1fr 1fr;
+									gap: 10px;
+								}
+							</style>
+							<div class="toolkit-grid">
+								<div class="tool-cube">
+									<span class="tool-category">Video Production</span>
+									<ul class="tool-list">
+										<li class="tool-item">
+											<img class="tool-logo" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/DaVinci_Resolve_Studio_16_icon.png" />
+											Resolve Studio <span class="status-badge primary">Primary</span>
+										</li>
+										<li class="tool-item" style="opacity: 0.5;">
+											<img class="tool-logo" src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" />
+											Premiere <span class="status-badge obsolete">OBS</span>
+										</li>
+										<li class="tool-item" style="opacity: 0.5;">
+											<img class="tool-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg" />
+											After Effects <span class="status-badge obsolete">OBS</span>
+										</li>
+									</ul>
+								</div>
+								<div class="tool-cube">
+									<span class="tool-category">IDEs &amp; Editors</span>
+									<ul class="tool-list">
+										<li class="tool-item">
+											<img class="tool-logo" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" />
+											VS Code
+										</li>
+										<li class="tool-item">
+											<img class="tool-logo" src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Notepad%2B%2B_logo.svg" />
+											Notepad++
+										</li>
+									</ul>
+								</div>
+								<div class="tool-cube">
+									<span class="tool-category">Programming</span>
+									<div class="tag-grid">
+										<div class="tool-item"><img class="tool-logo" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" /> HTML</div>
+										<div class="tool-item"><img class="tool-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" /> CSS</div>
+										<div class="tool-item"><img class="tool-logo" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" /> JS</div>
+										<div class="tool-item"><img class="tool-logo" src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" /> C++</div>
+										<div class="tool-item"><img class="tool-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Lua-logo-nolabel.svg" /> Lua</div>
+										<div class="tool-item"><img class="tool-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" /> PY</div>
+									</div>
+								</div>
+								<div class="tool-cube">
+									<span class="tool-category">PC Repair</span>
+									<ul class="tool-list">
+										<li class="tool-item">
+											<img class="tool-logo" src="https://www.cpuid.com/medias/images/softwares/cpu-z.png" />
+											CPU-Z / GPU-Z
+										</li>
+										<li class="tool-item">
+											<img class="tool-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/AnyDesk_logo.svg" />
+											AnyDesk
+										</li>
+										<li class="tool-item">
+											<img class="tool-logo" src="https://www.maxon.net/favicon.ico" />
+											Cinebench
+										</li>
+										<li class="tool-item">
+											<img class="tool-logo" src="https://windirstat.net/images/windirstat_icon.png" />
+											WinDirStat
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-block portfolio-block-4 portfolio-divider">
+						<div class="center portfolio-separator" style="border-top:4px solid #dddddd;width:100%;"></div>
+					</div>
+					<div class="portfolio-block portfolio-block-5 portfolio-html-block">
+						<div id="portfolio-footer-embed">
+							<style>
+								#portfolio-footer-embed {
+									font-family: 'Inter', -apple-system, sans-serif;
+									max-width: 900px;
+									margin: 60px auto 100px auto;
+									/* Large bottom margin to give the page room */
+									text-align: center;
+									padding: 20px;
+								}
+
+								.thank-you-cube {
+									background-color: #ededed;
+									border-radius: 15px;
+									padding: 40px;
+									border: 2px dashed #ccc;
+									/* Dashed border for a "finish line" feel */
+									display: inline-block;
+									min-width: 300px;
+									box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+								}
+
+								.thank-you-text {
+									font-size: 1.5rem;
+									font-weight: 800;
+									color: #444;
+									letter-spacing: 1px;
+									margin: 0;
+								}
+
+								.sub-footer {
+									margin-top: 15px;
+									font-size: 0.85rem;
+									color: #888;
+									font-family: monospace;
+								}
+
+								.scroll-top-hint {
+									margin-top: 25px;
+									font-size: 0.75rem;
+									color: #aaa;
+									text-transform: uppercase;
+									letter-spacing: 2px;
+								}
+							</style>
+							<div class="thank-you-cube">
+								<p class="thank-you-text">Thank you for reading.</p>
+								<div class="sub-footer">// end_of_portfolio_v1.0</div>
+							</div>
+							<div class="scroll-top-hint">CoreFrame Solutions • Baguio City</div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-col portfolio-col-2 portfolio-col-w7">
+					<div class="portfolio-block portfolio-block-1 portfolio-heading">
+						<h1><span>JOB HISTORY</span> </h1>
+					</div>
+					<div class="portfolio-block portfolio-block-2 portfolio-divider">
+						<div class="center portfolio-separator" style="border-top:4px solid #dddddd;width:100%;"></div>
+					</div>
+					<div class="portfolio-block portfolio-block-3 portfolio-html-block">
+						<div id="portfolio-history-embed">
+							<style>
+								#portfolio-history-embed {
+									font-family: 'Inter', -apple-system, sans-serif;
+									color: #333;
+									max-width: 850px;
+									margin: 0 auto;
+									padding: 20px;
+									background-color: transparent;
+								}
+
+								.history-line {
+									border-left: 4px solid #ccc;
+									padding-left: 30px;
+									margin-left: 15px;
+									position: relative;
+								}
+
+								.job-cube {
+									background-color: #ededed;
+									border-radius: 12px;
+									padding: 25px;
+									margin-bottom: 30px;
+									position: relative;
+									box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+									border: 1px solid #ddd;
+								}
+
+								/* Timeline Marker */
+								.job-cube::before {
+									content: "";
+									position: absolute;
+									left: -43px;
+									top: 25px;
+									width: 18px;
+									height: 18px;
+									background-color: #4a90e2;
+									/* Modern blue for active/work history */
+									border-radius: 50%;
+									border: 4px solid #fff;
+								}
+
+								.job-header {
+									display: flex;
+									justify-content: space-between;
+									align-items: flex-start;
+									flex-wrap: wrap;
+									margin-bottom: 15px;
+									border-bottom: 1px solid #ccc;
+									padding-bottom: 10px;
+								}
+
+								.job-title {
+									font-weight: 800;
+									font-size: 1.2rem;
+									color: #111;
+								}
+
+								.company-name {
+									font-weight: 600;
+									color: #4a90e2;
+									font-size: 1rem;
+									display: block;
+								}
+
+								.job-date {
+									font-size: 0.85rem;
+									font-weight: 700;
+									color: #777;
+									background: #fff;
+									padding: 4px 10px;
+									border-radius: 6px;
+									border: 1px solid #ddd;
+								}
+
+								.job-bullets {
+									margin: 0;
+									padding-left: 18px;
+									list-style-type: square;
+								}
+
+								.job-bullets li {
+									font-size: 0.9rem;
+									line-height: 1.6;
+									margin-bottom: 8px;
+									color: #444;
+								}
+
+								.location-tag {
+									font-size: 0.8rem;
+									color: #888;
+									font-style: italic;
+									margin-top: 5px;
+									display: block;
+								}
+							</style>
+							<div class="history-line">
+								<div class="job-cube">
+									<div class="job-header">
+										<div>
+											<span class="job-title">Founder &amp; Lead Technician</span>
+											<span class="company-name">CoreFrame Solutions</span>
+											<span class="location-tag">Baguio City</span>
+										</div>
+										<span class="job-date">June 2025 – Present</span>
+									</div>
+									<ul class="job-bullets">
+										<li>Established a freelance brand providing professional video post-production (DaVinci Resolve) and hardware repair services.</li>
+										<li>Managed end-to-end client projects, from initial technical diagnostics to final creative delivery.</li>
+									</ul>
+								</div>
+								<div class="job-cube">
+									<div class="job-header">
+										<div>
+											<span class="job-title">Freelance Computer Technician</span>
+											<span class="company-name">Self-Employed</span>
+										</div>
+										<span class="job-date">May 2025 – June 2025</span>
+									</div>
+									<ul class="job-bullets">
+										<li>Executed short-term technical contracts focusing on rapid diagnostics and hardware upgrades.</li>
+									</ul>
+								</div>
+								<div class="job-cube">
+									<div class="job-header">
+										<div>
+											<span class="job-title">Computer Technician &amp; Customer Agent</span>
+											<span class="company-name">EKA Computers</span>
+											<span class="location-tag">Masbate City</span>
+										</div>
+										<span class="job-date">March 2024 – April 2025</span>
+									</div>
+									<ul class="job-bullets">
+										<li>Performed advanced hardware diagnostics, component replacements, and system optimization.</li>
+										<li>Bridged the gap between technical repairs and customer service, explaining complex issues to non-technical clients.</li>
+										<li>Maintained a high success rate for software recovery and OS installations.</li>
+									</ul>
+								</div>
+								<div class="job-cube" style="opacity: 0.9;">
+									<div class="job-header">
+										<div>
+											<span class="job-title">Systems Manager &amp; Cashier</span>
+											<span class="company-name">YD Computers and Accessories</span>
+											<span class="location-tag">Masbate City</span>
+										</div>
+										<span class="job-date">June 2021 – Feb 2025</span>
+									</div>
+									<ul class="job-bullets">
+										<li>Oversaw the digital POS (Point of Sale) and register systems for a moderate-traffic retail environment.</li>
+										<li>Provided hands-on repair for customer units and shop units, specializing in hardware upgrades and maintenance.</li>
+										<li>Balanced financial reporting with technical troubleshooting to ensure smooth daily operations.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-row portfolio-row-7">
+			<div class="portfolio-row-content">
+				<div class="portfolio-col portfolio-col-1 portfolio-col-w12"></div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
