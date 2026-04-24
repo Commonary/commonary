@@ -93,7 +93,9 @@
 		.portfolio-row-3,
 		.portfolio-row-4,
 		.portfolio-row-5,
-		.portfolio-row-6 {
+		.portfolio-row-6,
+        .portfolio-row-philosophy,
+        .portfolio-row-goals {
 			background-repeat: no-repeat
 		}
 
@@ -101,7 +103,9 @@
 		.portfolio-row-2 .portfolio-row-content,
 		.portfolio-row-4 .portfolio-row-content,
 		.portfolio-row-5 .portfolio-row-content,
-		.portfolio-row-6 .portfolio-row-content {
+		.portfolio-row-6 .portfolio-row-content,
+        .portfolio-row-philosophy .portfolio-row-content,
+        .portfolio-row-goals .portfolio-row-content {
 			background-color: #2d2d2d;
 			background-repeat: no-repeat;
 			border-radius: 0;
@@ -118,7 +122,9 @@
 		.portfolio-row-5 .portfolio-col-1,
 		.portfolio-row-6 .portfolio-col-1,
 		.portfolio-row-6 .portfolio-col-2,
-		.portfolio-row-7 .portfolio-col-1 {
+		.portfolio-row-7 .portfolio-col-1,
+        .portfolio-row-philosophy .portfolio-col-1,
+        .portfolio-row-goals .portfolio-col-1 {
 			padding-bottom: 5px;
 			padding-top: 5px
 		}
@@ -129,7 +135,9 @@
 		.portfolio-row-4 .portfolio-col-2 .portfolio-block-1,
 		.portfolio-row-4 .portfolio-col-2 .portfolio-block-5,
 		.portfolio-row-6 .portfolio-col-1 .portfolio-block-1,
-		.portfolio-row-6 .portfolio-col-2 .portfolio-block-1 {
+		.portfolio-row-6 .portfolio-col-2 .portfolio-block-1,
+        .portfolio-row-philosophy .portfolio-col-1 .portfolio-block-1,
+        .portfolio-row-goals .portfolio-col-1 .portfolio-block-1 {
 			padding: 10px;
 			text-align: center;
 			width: 100%
@@ -145,7 +153,9 @@
 		.portfolio-row-5 .portfolio-col-1 .portfolio-block-1,
 		.portfolio-row-6 .portfolio-col-1 .portfolio-block-2,
 		.portfolio-row-6 .portfolio-col-1 .portfolio-block-4,
-		.portfolio-row-6 .portfolio-col-2 .portfolio-block-2 {
+		.portfolio-row-6 .portfolio-col-2 .portfolio-block-2,
+        .portfolio-row-philosophy .portfolio-col-1 .portfolio-block-2,
+        .portfolio-row-goals .portfolio-col-1 .portfolio-block-2 {
 			padding: 10px
 		}
 
@@ -166,7 +176,9 @@
 		.portfolio-row-4 .portfolio-col-2 .portfolio-block-1 h1,
 		.portfolio-row-4 .portfolio-col-2 .portfolio-block-5 h1,
 		.portfolio-row-6 .portfolio-col-1 .portfolio-block-1 h1,
-		.portfolio-row-6 .portfolio-col-2 .portfolio-block-1 h1 {
+		.portfolio-row-6 .portfolio-col-2 .portfolio-block-1 h1,
+        .portfolio-row-philosophy .portfolio-col-1 .portfolio-block-1 h1,
+        .portfolio-row-goals .portfolio-col-1 .portfolio-block-1 h1 {
 			color: #dddddd;
 			direction: ltr;
 			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
@@ -280,6 +292,185 @@
 				</div>
 			</div>
 		</div>
+
+        <div class="portfolio-row portfolio-row-philosophy">
+			<div class="portfolio-row-content">
+				<div class="portfolio-col portfolio-col-1 portfolio-col-w12">
+					<div class="portfolio-block portfolio-block-1 portfolio-heading">
+						<h1><span>LIFE PHILOSOPHY</span> </h1>
+					</div>
+					<div class="portfolio-block portfolio-block-2 portfolio-divider">
+						<div class="center portfolio-separator" style="border-top:4px solid #dddddd;width:100%;"></div>
+					</div>
+					<div class="portfolio-block portfolio-block-3 portfolio-html-block">
+						<div id="portfolio-philosophy-embed">
+							<style>
+								#portfolio-philosophy-embed {
+									font-family: 'Inter', -apple-system, sans-serif;
+									color: #333;
+									max-width: 1100px;
+									margin: 0 auto;
+									padding: 20px;
+									background-color: transparent;
+								}
+
+								.philosophy-grid {
+									display: grid;
+									grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+									gap: 20px;
+								}
+
+								.philosophy-cube {
+									background-color: #ededed;
+									border-radius: 12px;
+									padding: 25px;
+									box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+									border: 1px solid #ddd;
+									display: flex;
+									flex-direction: column;
+                                    text-align: left;
+								}
+
+								.philosophy-header {
+									font-weight: 800;
+									font-size: 1.1rem;
+									margin-bottom: 12px;
+									color: #222;
+									text-transform: uppercase;
+									letter-spacing: 1px;
+									border-bottom: 2px solid #ccc;
+									padding-bottom: 8px;
+								}
+
+								.philosophy-text {
+									font-size: 1rem;
+									line-height: 1.6;
+									color: #444;
+									font-style: italic;
+								}
+
+								.philosophy-footer {
+									margin-top: auto;
+                                    padding-top: 15px;
+									font-family: monospace;
+									font-size: 0.75rem;
+									color: #999;
+								}
+							</style>
+							<div class="philosophy-grid">
+								<div class="philosophy-cube">
+									<span class="philosophy-header">Patience & Forgiveness</span>
+									<p class="philosophy-text">
+										"I believe that being forgiving and patient is one of the best philosophies you can ever have, but there is a limit to that patience and forgiveness."
+									</p>
+									<div class="philosophy-footer">// ethics_logic_v1</div>
+								</div>
+								<div class="philosophy-cube">
+									<span class="philosophy-header">On Teamwork</span>
+									<p class="philosophy-text">
+										"I do understand that teamwork makes the dream work, but that's only if your teammates do something, if you do everything yourself, are you even a team? If you carry everyone, were you even ever a team?"
+									</p>
+									<div class="philosophy-footer">// collab_audit_01</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <div class="portfolio-row portfolio-row-goals">
+			<div class="portfolio-row-content">
+				<div class="portfolio-col portfolio-col-1 portfolio-col-w12">
+					<div class="portfolio-block portfolio-block-1 portfolio-heading">
+						<h1><span>LIFE GOALS</span> </h1>
+					</div>
+					<div class="portfolio-block portfolio-block-2 portfolio-divider">
+						<div class="center portfolio-separator" style="border-top:4px solid #dddddd;width:100%;"></div>
+					</div>
+					<div class="portfolio-block portfolio-block-3 portfolio-html-block">
+						<div id="portfolio-goals-embed">
+							<style>
+								#portfolio-goals-embed {
+									font-family: 'Inter', -apple-system, sans-serif;
+									color: #333;
+									max-width: 1100px;
+									margin: 0 auto;
+									padding: 20px;
+									background-color: transparent;
+								}
+
+								.goals-grid {
+									display: grid;
+									grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+									gap: 20px;
+								}
+
+								.goal-cube {
+									background-color: #ededed;
+									border-radius: 12px;
+									padding: 25px;
+									box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+									border: 1px solid #ddd;
+									display: flex;
+									flex-direction: column;
+                                    text-align: left;
+								}
+
+								.goal-header {
+									font-weight: 800;
+									font-size: 1.1rem;
+									margin-bottom: 12px;
+									color: #222;
+									text-transform: uppercase;
+									letter-spacing: 1px;
+									border-bottom: 2px solid #ccc;
+									padding-bottom: 8px;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 10px;
+								}
+
+								.goal-text {
+									font-size: 1rem;
+									line-height: 1.6;
+									color: #444;
+								}
+
+								.goal-status {
+									margin-top: auto;
+                                    padding-top: 15px;
+									font-family: monospace;
+									font-size: 0.75rem;
+									color: #4a90e2;
+                                    font-weight: bold;
+								}
+							</style>
+							<div class="goals-grid">
+								<div class="goal-cube">
+									<span class="goal-header">🚀 Entrepreneurship</span>
+									<p class="goal-text">
+										Building and scaling a <strong>successful business</strong> that bridges the gap between high-end technical hardware solutions and creative digital production.
+									</p>
+									<div class="goal-status">> INITIALIZING_CORE_FRAME</div>
+								</div>
+								<div class="goal-cube">
+									<span class="goal-header">🎓 Academic Completion</span>
+									<p class="goal-text">
+										Committed to <strong>finishing school</strong> to solidify my foundational knowledge and secure the academic credentials that complement my years of hands-on technical experience.
+									</p>
+									<div class="goal-status">> ACADEMIC_PATHWAY_ACTIVE</div>
+								</div>
+							</div>
+						</div>
+					</div>
+                    <div class="portfolio-block portfolio-block-4 portfolio-divider">
+						<div class="center portfolio-separator" style="border-top:4px solid #dddddd;width:100%;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="portfolio-row portfolio-row-4">
 			<div class="portfolio-row-content">
 				<div class="portfolio-col portfolio-col-1 portfolio-col-w5">
