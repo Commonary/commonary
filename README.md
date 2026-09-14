@@ -1,5 +1,8 @@
 ## Hi there 👋
+Hello it's me, verity!
 
+> [!NOTE]
+> This is used for school purposes only, please do not touch.
 <!--
 **Commonary/Commonary** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
